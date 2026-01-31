@@ -71,7 +71,7 @@ export default function WorkPage() {
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 list-none p-0 m-0">
           {projects.map((project, index) => (
             <li key={index} className="aspect-square">
-              <Link
+              <a
                 href={project.href}
                 className="group block relative w-full h-full overflow-hidden rounded bg-[#e8e6e3] cursor-pointer"
               >
@@ -88,7 +88,7 @@ export default function WorkPage() {
                     {project.meta}
                   </span>
                 </span>
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

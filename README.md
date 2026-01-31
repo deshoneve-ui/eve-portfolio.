@@ -67,8 +67,11 @@ Then open: **http://localhost:3000** (or http://127.0.0.1:3000)
    In a terminal, from the **eve-portfolio** folder:
 
    ```bash
-   # Add GitHub as the remote (replace YOUR_USERNAME and YOUR_REPO with your GitHub username and repo name)
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   # Add GitHub as the remote (replace with the exact URL from GitHub → Code → HTTPS)
+   # If your repo is named "eve-portfolio." (with a dot), use:
+   #   git remote add origin https://github.com/deshoneve-ui/eve-portfolio..git
+   # Otherwise:
+   git remote add origin https://github.com/deshoneve-ui/YOUR_REPO_NAME.git
 
    # Stage everything
    git add .

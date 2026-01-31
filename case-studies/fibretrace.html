@@ -5,26 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FibreTrace® — Eve Deshon</title>
     <link rel="stylesheet" href="../styles.css" />
+    <style>
+      /* Light layout — same colour alterations as MONK / case studies */
+      body.case {
+        --bg: #f8f6f3;
+        --panel: #fff;
+        --text: #1a1a1a;
+        --muted: #555;
+        --faint: rgba(0, 0, 0, 0.12);
+        --ring: rgba(0, 0, 0, 0.2);
+        background: #f8f6f3;
+        color: var(--text);
+      }
+      body.case .site-header {
+        background: rgba(248, 246, 243, 0.85);
+        border-bottom-color: rgba(0, 0, 0, 0.08);
+      }
+      body.case .nav { color: var(--muted); }
+      body.case .nav a:hover { background: rgba(0, 0, 0, 0.06); color: var(--text); }
+      body.case .case-title,
+      body.case .case-meta,
+      body.case .case-block h2,
+      body.case .case-subhead h3,
+      body.case .crumbs a { color: var(--text); }
+      body.case .case-block p,
+      body.case .case-block li,
+      body.case .case-meta,
+      body.case .case-subhead .muted,
+      body.case .site-footer { color: var(--muted); }
+      body.case .site-footer { border-top-color: rgba(0, 0, 0, 0.08); }
+      body.case .case-block { border-top-color: rgba(0, 0, 0, 0.08); }
+      body.case .crumbs a,
+      body.case .site-footer .footer-row a { border-bottom-color: rgba(0, 0, 0, 0.18); }
+      body.case .crumbs a:hover,
+      body.case .site-footer .footer-row a:hover { border-bottom-color: rgba(0, 0, 0, 0.55); }
+      body.case .media-tile {
+        border-color: rgba(0, 0, 0, 0.08);
+        background: rgba(0, 0, 0, 0.02);
+      }
+      body.case .media-tile img {
+        background-color: rgba(248, 246, 244, 0.04);
+        box-sizing: content-box;
+        border-color: rgba(0, 0, 0, 0);
+        border-image: none;
+      }
+      body.case .media-tile--video video {
+        background: rgba(248, 246, 244, 0.04);
+      }
+      body.case .media-tile figcaption { color: var(--muted); }
+      body.case .social-card {
+        border-color: rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.02);
+      }
+      body.case .social-card:hover { border-color: rgba(0, 0, 0, 0.16); }
+      body.case .social-card-top .social-handle,
+      body.case .social-desc { color: var(--muted); }
+      body.case a:focus-visible,
+      body.case button:focus-visible { outline: 2px solid rgba(0, 0, 0, 0.55); }
+    </style>
   </head>
-  <body>
+  <body class="case">
     <a class="skip-link" href="#content">Skip to content</a>
     <header class="site-header">
       <div class="container header-row">
         <a class="brand" href="../">Eve Deshon</a>
         <nav class="nav" aria-label="Primary">
-          <a href="../#work">Work</a>
-          <a href="../#about">About</a>
-          <a href="../#contact">Contact</a>
+          <a href="../work.html">Work</a>
+          <a href="../experience.html">Experience</a>
+          <a href="../contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main id="content" class="container">
-      <p class="crumbs"><a href="../#work">← Back</a></p>
+    <main id="content" class="container case-main">
+      <p class="crumbs"><a href="../work.html">← Back to Work</a></p>
 
       <section class="case-hero">
         <p class="eyebrow">Case study</p>
-        <h1>FibreTrace® — event production + live social</h1>
+        <h1 class="case-title">FIBRETRACE® — EVENT PRODUCTION + LIVE SOCIAL</h1>
         <p class="case-meta">
           Event Planning & Production Intern · Oct 2025 · Portugal<br />
           Focus: end-to-end event support, live content capture, real-time publishing,
@@ -57,6 +115,124 @@
           <li>Content judgment (what to capture, when to post, how to frame it).</li>
           <li>Organisation, collaboration and stakeholder awareness.</li>
         </ul>
+      </section>
+
+      <section class="case-block" aria-label="FibreTrace imagery and social">
+        <h2>Imagery + social</h2>
+        <p>
+          A snapshot of the content captured on-site and how it was shaped for social.
+          (Drop your images into <code>assets/fibretrace/</code> and update filenames below.)
+        </p>
+
+        <div class="media-grid" role="list" aria-label="Image gallery">
+          <figure class="media-tile" role="listitem">
+            <img
+              src="../assets/fibretrace/ft-01.png"
+              alt="FibreTrace booth detail featuring the 'Verify' installation and product storytelling."
+              loading="lazy"
+            />
+            <figcaption>Booth storytelling. Verifying authenticity + integrity.</figcaption>
+          </figure>
+          <figure class="media-tile" role="listitem">
+            <img
+              src="../assets/fibretrace/ft-02.png"
+              alt="Wide view of the expo hall with the FibreTrace stand positioned centrally."
+              loading="lazy"
+            />
+            <figcaption>On-site coverage. Capturing scale, energy, and context.</figcaption>
+          </figure>
+          <figure class="media-tile" role="listitem">
+            <img
+              src="../assets/fibretrace/ft-03.png"
+              alt="FibreTrace stand from above showing screens, signage, and visitor engagement."
+              loading="lazy"
+            />
+            <figcaption>Brand experience. Moments built for social.</figcaption>
+          </figure>
+          <figure class="media-tile" role="listitem">
+            <img
+              src="../assets/fibretrace/ft-04.png"
+              alt="Branded FibreTrace print collateral and coffee packs prepared for attendees."
+              loading="lazy"
+            />
+            <figcaption>Content details. Assets that translate into posts and stories.</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-subhead">
+          <h3>Content, editing + production</h3>
+          <p class="muted">
+            I worked to a fast turnaround: capturing, selecting, editing and publishing
+            content daily while supporting on-the-ground production.
+          </p>
+        </div>
+        <ul class="skill-bullets">
+          <li><strong>Daily editing:</strong> trim/sequence, colour + exposure tweaks, captions, and export for platform specs.</li>
+          <li><strong>Social publishing:</strong> post scheduling, hashtag/copy variations, and real-time engagement monitoring.</li>
+          <li><strong>Production support:</strong> run-of-show awareness, quick problem solving, and calm execution under pressure.</li>
+        </ul>
+
+        <div class="video-grid" aria-label="Videos">
+          <figure class="media-tile media-tile--video">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="../assets/fibretrace/ft-03.png"
+            >
+              <source src="../assets/fibretrace/ft-video-01.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Short-form recap. Capturing the stand and crowd moments.</figcaption>
+          </figure>
+          <figure class="media-tile media-tile--video">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="../assets/fibretrace/ft-04.png"
+            >
+              <source src="../assets/fibretrace/ft-video-02.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Behind-the-scenes. Details, prep, and on-the-day workflow.</figcaption>
+          </figure>
+          <figure class="media-tile media-tile--video">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="../assets/fibretrace/ft-01.png"
+            >
+              <source src="../assets/fibretrace/ft-video-03.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Storytelling close-ups. Product + message moments.</figcaption>
+          </figure>
+        </div>
+
+        <div class="social-cards" aria-label="Social links">
+          <a class="social-card" href="https://instagram.com/evedeshon" target="_blank" rel="noreferrer">
+            <div class="social-card-top">
+              <span class="social-label">Instagram</span>
+              <span class="social-handle">@evedeshon</span>
+            </div>
+            <p class="social-desc">Reels, carousels, BTS captures, and event moments.</p>
+          </a>
+
+          <a class="social-card" href="#" target="_blank" rel="noreferrer" aria-disabled="true">
+            <div class="social-card-top">
+              <span class="social-label">Project post</span>
+              <span class="social-handle">Add link</span>
+            </div>
+            <p class="social-desc">Link a FibreTrace-specific post or highlight.</p>
+          </a>
+
+          <a class="social-card" href="#" target="_blank" rel="noreferrer" aria-disabled="true">
+            <div class="social-card-top">
+              <span class="social-label">TikTok / LinkedIn</span>
+              <span class="social-handle">Add link</span>
+            </div>
+            <p class="social-desc">Optional: comms recap, learnings, or campaign write-up.</p>
+          </a>
+        </div>
       </section>
     </main>
 

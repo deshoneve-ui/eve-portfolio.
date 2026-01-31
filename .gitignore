@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Dependencies (root level; my-app has its own)
+node_modules/
+
+# Next.js (if built at root)
+.next/
+out/
+build/
+
+# Env and secrets
+.env
+.env.*
+*.pem
+
+# Logs and debug
+*.log
+npm-debug.log*
